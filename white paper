@@ -1,0 +1,993 @@
+TEXTILE CHAIN White Paper
+
+（TEC）
+
+
+                                                         
+
+
+
+                                                         
+
+
+
+Created by:
+
+                       Franky Branckaute,Zam ONG, Jack Brandon, 
+                     HONG TIAN WANG, PETER SIN, CALEB YAP
+
+	     2018.07
+
+
+Legal disclaimer
+
+Please note that we are in the process of undertaking a legal and regulatory analysis of our token sale model and the intended utility of tokens and TEC fuel on the underlying platform. Following the conclusion of this analysis, we may decide to amend the intended utility of tokens and/or TEC fuel in order to ensure compliance with any legal or regulatory requirements to which we  are subject. To the extent that we make any such changes, we shall update the White Paper and publish a notice on our website together with the latest version of the White Paper. It is your responsibility to regularly check our website for any such notices and updates.
+
+This White paper is for information purposes only and may be subject to change. We cannot guarantee the accuracy of the statements made or conclusions reached in this White paper and we expressly disclaim all representations and warranties (whether express or implied by statute or otherwise) whatsoever, including but not limited to:
+
+●Any representations or warranties relating to merchantability, fitness for a particular purpose, suitability, wage, title or non-infringement;
+●That the contents of this document are accurate and free from any errors; and
+●That such contents do not infringe any third party rights.
+
+We shall have no liability for damages of any kind arising out of the use, reference to or reliance on the contents of this White paper, even if advised of the possibility of damages arising.
+
+This White paper may contain references to third party data and industry publications. As far as we are aware, the information reproduced in this White paper is accurate and that the estimates and assumptions contained herein are reasonable. However, we offer no assurances as to the accuracy or completeness of this data. Although information and data reproduced in this White paper are believed to have been obtained from reliable sources, we have not independently verified any of the information or data from third party sources referred to in this White paper or ascertained the underlying assumptions relied upon by such sources.
+
+As of the date of publication of this White paper,TEC’s ERC20 Tokens have no known or intended future use (other than the anticipated conversion on TEC’s application in the form of TEC fuel).
+
+No promises of future performance or value are or will be made with respect to TEC’s ERC20 Tokens, including no promise of inherent value, no promise of continuing payments, and no guarantee that TEC’s ERC20 Tokens will hold any particular value. Unless prospective participants fully understand and accept the nature of TEC’s business and the potential risks associated with the acquisition, storing and transfer of TEC’s ERC20 Tokens, they should not participate in the TEC ERC20 Token Sale.TEC’s ERC20 Tokens are not being structured or sold as securities.TEC’s ERC20 Tokens hold no rights and confer no interests in the equity of TEC.TEC’s ERC20 Tokens are sold with an intended future functionality on the TEC application and all proceeds received during the Token Sale (referred to as an Initial Community Offer in the White paper) may be spent freely by TEC on the development of its business and the underlying technological infrastructure.
+
+This White paper does not constitute a prospectus or disclosure document and is not an offer to sell, nor the solicitation of any offer to buy any investment or financial instrument in any jurisdiction.TEC’s ERC20 Tokens should not be acquired for speculative or investment purposes with the expectation of making an investment return.
+
+No regulatory authority has examined or approved any of the information set out in this White paper. No such action has or will be taken under the laws, regulatory requirements or rules of any jurisdiction. The publication, distribution or dissemination of this White paper does not imply that applicable laws or regulatory requirements have been complied with.
+
+Participation in TEC’s ERC20 Token Sale carries substantial risk and may involve special risks that could lead to a loss of all or a substantial portion of your contribution. Further information about the risks of participating in the Token Sale are set out in the Token Sale T&Cs. Please ensure that you have read, understood and are prepared to accept the risks of participating in the Token Sale before sending a contribution to us.
+
+The Token Sale and/or TEC Tokens could be impacted by regulatory action, including potential restrictions on the ownership, use, or possession of such tokens. Regulators or other competent authorities may demand that we revise the mechanics of the Token Sale and/or the functionality of TEC Tokens in order to comply with regulatory requirements or other governmental or business obligations. Nevertheless, we believe we are taking commercially reasonable steps to ensure that the Token Sale mechanics and issue of TEC Tokens do not violate applicable laws and regulations.
+
+CAUTION REGARDING FORWARD-LOOKING STATEMENTS
+
+This White paper contains forward-looking statements or information (collectively “forward-looking statements”) that relate to our current expectations of future events. In some cases, these
+forward-looking statements can be identified by words or phrases such as “may”, “will”, “expect”, “anticipate”, “aim”, “estimate”, “intend”, “plan”, “seek”, “believe”, “potential”, “continue”, “is/are likely to” or the negative of these terms, or other similar expressions intended to identify forward-looking statements. We have based these forward-looking statements on current projections about future events and financial trends that we believe may affect our financial condition, results of operations, business strategy, financial needs, or the results of the Token Sale.
+
+In addition to statements relating to the matters set out here, this White paper contains
+forward-looking statements related to TEC’s proposed operating model. The model speaks to our objectives only, and is not a forecast, projection or prediction of future results of operations.
+
+Forward-looking statements are based on certain assumptions and analysis made by TEC in light of its experience and perception of historical trends, current conditions and expected future developments and other factors it believes are appropriate, and are subject to risks and uncertainties. Although the forward-looking statements contained in this White paper are based upon what we believe are reasonable assumptions, there are risks, uncertainties, assumptions, and other factors which could cause TEC’s actual results, performances, achievements and/or experiences to differ materially from the expectations expressed, implied, or perceived in forward-looking statements.
+Given such risks, prospective participants in the Token Sale should not place undue reliance on these forward-looking statements.
+
+
+Table of Contents
+
+
+
+Former speech	5
+The change of the "chain" era	5
+Standard for textile industry chain	5
+Construction of the global textile industry ecosystem	6
+chapter one：Background introduction	7
+The future has come	12
+give an example	12
+self-examination	13
+Chapter two： roject introduction	13
+chapter three：Technical architecture	18
+3.1Underlying block chain architecture	19
+3.2 Storage mechanism	20
+3.3 Consensus mechanism	20
+3.4 distributed data systems	22
+3.5  Technical description	23
+Chapter four:introduction to TEC	25
+1. Information asymmetry	28
+2. Credit cannot be transferred	28
+Chapter five:Issue Mechanism	30
+5.1 currency circulation	31
+5.2 "Deposit is done"	31
+5.3 Super contributors	32
+5.4 TEC Special Fund	32
+5.5 Community Feedback	32
+Chapter six:TEC ecosystem	33
+6.1 TEC project sponsors and foundations	33
+6.2 TEC technology development team	34
+Desmond Bennett	35
+VIOLET LIM	35
+ZAM ONG	36
+6.2 Chief of the staff	37
+6.3 User	37
+6.4 Advertisers	38
+
+Appendix: Criticisms and Objections	39
+“You obviously don’t understand ‘Trustless’ currencies.”	40
+Glossary	40
+
+Former speech
+
+The era of artificial intelligence will come faster than we expected. The development of virtual reality, hybrid reality, shared economy and blockchain technology will revolutionize human life in the near future. For example, in 2035 the whole world will work together through block-chain technology.
+
+Kevin Kelly's opening speech at the Boao Forum for Asia in 2018
+
+
+The change of the "chain" era
+
+The wave of intelligence and information is causing profound changes in global industry.The new generation of information technology and manufacturing industry is leading to far-reaching industrial changes, forming a new mode of production and economic growth. At the Boao Forum for Asia in 2018, innovative applications such as Internet of things, big data and artificial intelligence are leading the way in manufacturing. These will make our manufacturing industry transformation and upgrading, innovation and development ushered in major opportunities.
+
+Textile industry is the traditional advantage industry in manufacturing industry and the industry with new advantage in international competition. With the iterative evolution of new generation information technology such as block chain technology and the new trend of changing the structure of production factors, the textile industry, The textile industry urgently needs to speed up to intelligent manufacturing new form, new mode transformation and upgrade, further create the international competition new advantage, move to the global similar industry value chain in the high-end. Integration of production and research, innovation drive. We hope that we can construct a new block chain ecosystem-textile industry chain, using block chain technology to push the global textile industry to a higher dimensional intelligent application. Information Technology will be used in the production and Development of Human beings The textile industry chain is a profound change that the textile industry adapts to the information age.
+
+The deep amalgamation of block chain technology and textile industry will break the existing textile boundary, change the operation mode of textile industry deeply, and return to the essential problem to be solved by the industry-the efficient circulation of products on the shortage side and surplus side. Through the innovation of distributed technology, consensus mechanism and block agreement, the textile industry chain becomes the bridge connecting the real trade of the global textile industry.
+
+
+Standard for textile industry chain
+
+With big data, Internet of things, intellectualization as the core support of decentralization, real and credible decision-making model and operating platform-textile industry chain is in urgent need of breaking the ice.
+
+Although each device is distributed in different regions in the textile industry chain, the interaction between them and all operations are carried out through the server in the cloud. How to promote the intelligent manufacturing of textile industry, how to grasp the digital, network, intelligent and other emerging technology application is urgent, so we need to promote the textile industry chain standard landing as soon as possible.
+
+In addition, the shopping experience such as new retailing will bring about subversive changes to the whole textile industry. The textile industry chain is an inevitable product adapted to the new retail environment of the textile industry, and its development trend will inevitably spread to the whole textile industry rapidly. How to reduce inventory more scientifically, promote circulation, practice supply-side reform, and create innovative real economy are all the power sources to promote the construction of textile industry chain standard.
+
+In order to do a good job in the basic skill of "data" in the textile industry chain, we should digitize all manufacturing elements, including objects, equipment, and so on, and also turn people into figures and digitize all kinds of human behaviors. On this basis, we should realize data interconnection. Then realize network and intelligence, support decision-making and operation.
+
+In essence, the Internet of things is still a central architecture, and will encounter many bottlenecks in large-scale expansion: soaring costs, system congestion, low reliability, and servers are vulnerable to attack. In addition, the device data is also owned by the service provider, users can not fully access their own data.
+
+Based on the need for decentralization, the textile industry chain redesigned some elements of the traditional block chain:
+
+The consensus mechanism introduces the contribution of device computing capacity, storage capacity and communication capability.
+
+The new protocol design, the common input of the data between the chain and the chain as the trigger condition, realizes the exchange of value between the line and the line, such as the decentralized design copyright authentication and transaction system, and the information management of the raw material production place.
+
+A new transaction rate mechanism is introduced to realize the optimal allocation of community resources in block chain.
+
+New encryption structure and access authority, equipment can open the chain of data to designated users, such as the establishment of well-known brand clothing anti-counterfeiting system, credible textile production process management system, production, storage, circulation links management.
+
+The existing third-party software such as distributed file system and distributed database are widely integrated and their advantages are combined with block-chain technology to complement each other.
+
+The interface to hardware connection is optimized to allow seamless access of hardware with different characteristics to the textile industry chain.
+
+In the protocol layer built-in coin exchange system, easy to run in the textile cloud between different DeOS value transfer through these innovations, people, people and things, The connection between objects and objects is done in the distributed structure of the textile industry chain, not through the central server, And eventually developed into a hard and soft ecology: all the equipment or system running on the textile chain consensus mechanism can be regarded as a citizen in the textile industry chain.
+
+
+Construction of the global textile industry ecosystem
+
+The textile industry is in a new manufacturing era. In the next 510 years, we will rely on the textile industry chain to build a whole ecological circle, such as textile intelligent manufacturing technology, new textile industry model, intelligent textile material technology research and development and industrial application, platform construction and talent team building, etc. Build the textile industry intelligent manufacturing system, improve the overall level of China's textile industry intelligent manufacturing.
+
+The company involved in the development of the textile industry chain, the operating foundation, does not guarantee that the entire textile industry chain project will eventually achieve our vision, and one thing we can guarantee: once the entire project has been implemented, Network-based and community-based maintenance will continue.
+
+Community building and code open source: the textile industry chain is dedicated to creating a globally influential textile community ecology through community, third-party developers and technological innovation, integrating the textile industry chain into a global textile world where everything is connected. Become the real world individual information transmission and value exchange media.
+
+Textile Cloud Foundation: in order to achieve the sustainable development of the textile industry chain and avoid the divergence of the loose sand development structure and the underlying structure, the textile industry chain foundation will develop a sound governance structure for general anecdotes, code management, financial management, The compensation management and the privilege operation scope and so on transaction carries on the management. At the same time, the governance structure will be updated with the development of foundations and communities, and the introduction of monitoring and oversight functions, rulemaking and change control management.
+
+Business application: the textile industry chain foundation integrates the resources of enterprise, business, technology and government through the cooperation with partners, maximizes the sharing of resources, uses the resources most efficiently, and realizes the coordinated development of society.
+
+The textile industry chain integrates resources through the textile industry ecosphere, deeply analyzes the textile industry chain, from the textile planting, research and development, design, printing and dyeing, warehousing, logistics and other fields through block chain traceability technology and intelligent contract, At the same time, the blockchain technology has been applied to the consumer shopping field, including new retail, and the clothing channel has sunk to the terminal to build a strong global brand. A reliable intelligent supply chain platform, a comprehensive mall with the most complete function and the most novel business model, to create the world textile industry win-win ecological circle and human harmonious economic community.
+
+It is with digitalization, network and intelligence as the core that the project team puts forward the basic paradigm of intelligent manufacturing in textile industry, that is, the intelligent manufacturing system of textile industry based on "human-information-physical system". And based on industrial big data textile industry digital control system. These two paradigms not only integrate the textile industry chain into the whole process of textile industry, realize state perception, real-time analysis, scientific decision making and accurate execution, but also form industrial big data through the interconnection of the whole process, intelligent sensors collecting all kinds of data. On the platform of industrial big data, the industrial software is used to realize the big data application scene of textile production.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chapter one：Platform overview
+
+1.1 The Origin of Textile Industry chain
+
+More than 300 years ago, Song Yingxing, a scientist in the Song Dynasty, compiled the world's first comprehensive book on agriculture and handicraft production, Tiangong Kaiwu, which celebrates China's thousands of years of textile technology. The most famous textiles in China are silk. The trade in silk has led the development of cultural exchanges and communications between the East and the West, as well as indirect influences. The business and military of the West, the royal families of ancient Greece and Rome, the aristocracy are proud of having silk clothes. But after a long journey across the sea, how to distinguish between the true and false textiles has always been a pain in the hearts of merchants. Now, Textile C. Hain) it will be readily solved.
+
+As the first block chain project involving the whole textile industry ecology, the textile industry chain relies on the absolute resource advantage of the TEC team in the textile and clothing field, and realizes the integration of the whole ecology of the textile industry. There are many participants in the operation mechanism of the Internet platform in the textile industry chain. They include the government, regulatory agencies and various ministries, large textile production organizations in the industry, large textile circulation agencies, and the vast number of consumers. Through a wide range of roles, the formation of multiple checks and balances, to avoid data corruption and data fraud.
+
+
+1.2 Orientation and Technical Logic of Textile Industry chain
+
+1.2.1 Textile industry chain positioning
+
+(TextileChain), is a decentralized block chain based on block chain, which belongs to the ecology of textile industry. Its core is to establish a trusted and more efficient whole process service ecosystem of textile industry.
+
+The textile industry chain is a global leading traceability Internet platform and infrastructure based on block-chain, Internet of things technology, which is first used to trace textile products, providing true and reliable information on high-quality textile product transactions, and its nature is open. Credible or independent.
+
+For the global textile industry, the textile industry chain is a convenient, safe and trustworthy decentralized operation organization. All connected devices or systems can be considered citizens of the textile chain. The weights of participation and TEC holdings in the ecosystem will determine the votes on major issues such as upgrades, foundation personnel changes, and so on. The rights of all members of the community ecosystem will be determined jointly by the weights of participation and TEC holdings.
+
+Technically speaking, the textile industry chain (TextileChain) is a decentralized supercomputer formed by the blockchain idea, which is run by the protocol of the textile industry chain specification. Any connected device (e. G., electric brain, mobile phone, watch, vehicle, game handle, street lamp, smart home, etc.) or DOS runs and connects to each other in the textile industry chain
+
+The textile industry chain aims to create a comprehensive textile production and the whole industry service system, relying on the block chain technology to build a decentralized industry ecosystem, industry characteristics to design the underlying technical framework. The distributed content database and the decentralized Internet of things set up by the textile industry chain are used to solve many problems facing the textile industry. Used to look at problems in a developmental way.
+
+The textile industry chain is a self-evolutionary system based on value incentives, which revolves around the following dimensions:
+
+Definition of value scale: the textile industry chain defines the value scale and incentives for measuring the contribution of equipment in the textile cloud.
+
+Building community ecology: building communities, providing developers with friendly positive feedback mechanisms, and building a prosperous middle 12 center ecological system.
+
+Self-evolution: the self-evolutionary governance model of the textile industry chain can lead the textile cloud to faster computing, stronger systems, and better experiential evolution, avoiding excessive human interference.
+
+A large number of distributed node interaction and cooperation services are required: self-built Mesh network, textile industry chain scene detection and so on.
+
+Development of projects that require a great deal of computing power. For example: big data scientific operation, artificial intelligence training and so on.
+
+Other block chain projects or block chain operating systems that follow the textile industry chain consensus mechanism.
+
+The Internet of things of textile industry chain is designed based on the transmission of value. Using block chain technology and network technology, the sensors, controllers and objective entities are connected together, and the intelligent management and control are realized. For example, through RFID (RFID), infrared sensors, global positioning systems, laser scanners and other information sensing equipment, according to the agreed protocol to connect any item to the Internet, information exchange and communication, in order to achieve intelligent identification. Position, track, monitor and manage. Block chain technology is used to solve the problem of data security caused by the lack of label authentication and centralized storage in sensor data collection. As well as the high cost of the traditional Internet of things in the protection of information security, through the reliable transmission and confirmation of information exchange and communication, the security and credibility of the value transmission of the Internet of things can be ensured.
+
+
+1.3 Solving the four pain points in Textile Industry
+
+In the textile industry, the requirements for textile materials, garment design, production technology, production equipment, production management and sales model, brand management are gradually raised. When the textile industry develops to a certain scale, the enterprises of textile industry will face the following problems: sales bottleneck, inventory imbalance, low profit, customer loss and other enterprise development pain point.
+
+For these four problems, he does not exist in a single way, but they are inextricably linked to each other. For example, one of the reasons for the low profits, the loss of customers, and the sales bottleneck is the imbalance in inventory. Clothing sales enterprises can not grasp the latest fashion in the clothing market in time. They have not done a good job of clothing reserves to win customers, resulting in the loss of customers. When problems are found, when popular style commodities are in place, they find that the loss of customers results in poor sales. The market has been flooded with related commodities, which has resulted in a backlog of goods; lack of grasp of the market will not dare to store goods on a large scale, can not accurately grasp the market demand to win profits, the backlog of goods And the lack of stock caused by the overall profit downturn. Through the real information of textile industry chain and intelligent big data analysis, the above problems will be solved.
+
+1.3.1 Promote the upgrading and Innovation of Enterprises to solve the problem of New Materials being copied
+
+Textile new materials, new technology research and development are the backbone of many Chinese enterprises and European and American textile industry enterprises in developed countries will often face a problem. New materials and new technologies (textile technology, dyeing technology, printing technology, etc.) are easy to be copied, resulting in high R & D costs, resulting in the loss of market competitiveness without recovery of R & D costs.
+
+The textile industry chain can truly record the enterprise's R & D progress, and can use this irrevocable record as the basis for the product R & D patent, and put an end to malicious plagiarism by unruly enterprises.
+
+1.3.2 Enhance the guarantee of enterprise brand management and put an end to counterfeiting brand
+
+With the continuous development of the global economy, the globalization of the production and trade of the world famous brands, with many luxury brands and world famous brands accompanied by rich profits, has brought about the problem of counterfeit goods to occupy the market share. The same is true of well-known brands in China, where counterfeiting and counterfeiting have had a huge impact on brand companies. Textile industry chain from the source of production, warehousing, logistics, distribution and other full process records, multi-links to ensure the authenticity of trading products.
+
+1.3.3 Enhance the guarantee of enterprise brand management and put an end to counterfeiting brand
+
+Textile industry chain can not only help enterprises find fabrics better, but also protect the copyright of designers, and make more garment designers willing to design. Enterprises can also buy design rights more conveniently and put them into production through textile industry chain.
+
+1.3.4 Build communication links in all links of production and sales, so as to avoid the imbalance of merchant channel inventory.
+
+In the textile industry from raw materials to ready-made clothing sales, each link is not completely divorced from the workflow, is a complete supply chain system, and this supply chain can realize information symmetry communication through the textile industry chain. From the growth of natural materials, collection and manufacture of chemical fiber raw materials, to raw material yarn making, printing and dyeing, weaving, and then to the establishment of page 1, page 6, cutting, garment making, clothing ingredients, packaging, storage, and finally distribution to channels and terminal stores, Even include after-sales service, thus forming a complete textile industry supply chain. In the current supply chain system of textile industry, there are many problems which restrict the development of industry and enterprise. To a large extent, the lack of effective management, backward equipment and mechanical and electrical information integration is not enough.
+
+
+
+
+
+
+Chapter two： The Scheme advantage and scenario Prospect of Textile Industry chain
+
+In the textile industry from raw materials to ready-made clothing sales, each link is not completely divorced from the workflow, is a complete supply chain system. From the growth of natural materials, collection and manufacture of chemical fiber raw materials to yarn making, printing and dyeing, weaving, design, cutting, garment making, clothing ingredients, packaging, storage and distribution to channels and terminal stores, Even include after-sales service, thus forming a complete textile industry supply chain.
+
+In the current supply chain system of textile industry, there are many problems which restrict the development of industry and enterprise. To a large extent, the lack of effective management, the backward equipment and the insufficient integration of electromechanical information. According to the time delay and computing ability of different services in textile industry, textile industry chain can extend from the planting of textile raw materials to the design, production, sale and after-sales service of clothing and a series of application scenarios. Different scenarios put forward different requirements and challenges for block chain technology, and textile industry chain also provided the corresponding technology and solution.
+
+2.1 The Scheme advantage of Textile Industry chain
+
+TEC can be understood as a new block chain architecture introduced by SUPER EOS COMMUNITY, a block-chain operating system designed for commercial distributed applications. Performance extension for distributed applications. TEC can support multiple applications simultaneously by creating a developer friendly block chain underlying platform similar to a block chain operating system. You can support multiple programming languages at the same time, provide the underlying modules for developers who develop dApp, and lower the barriers to development, just like Microsoft's windows, and TEC at the same time The parallel chain and DPOS approach solves the problem of latency and data throughput. It's not as simple as Bitcoin and Ethernet Square is digital money. Yaniv Leven, the founder of the TEC technology team, and Bennett, a former core member of the EOS BM technology team, are working together to create a TEC digital asset. Per EOS COMMUNITY, known as Block chain 3.0, aims to build a better TEC ecosystem.
+
+2.1.1 Whole industry chain solution
+
+Taking the whole industry chain of textile industry as the starting point, from the existing problems of planting and production of textile raw materials to the design, production and sale of ready-made garments and after-sales service, this paper aims at creating a decentralized solution to the whole industry chain of textile ecology.
+
+The fields involved include the origin of textile raw materials, the production process of textile and garment processing industry, the logistics of garment production and sales, the copyright problem of garment design, the anti-counterfeiting rights of well-known brands and the surrounding industries.
+
+On the basis of following the textile industry chain agreement, any block chain underlying operating system can run on the textile industry chain system, such as the current bitcoin network EOS, etc. As long as the textile industry chain is willing to follow the consensus mechanism or interoperability agreement, it can also operate in the textile industry chain, and use and schedule the resources in the chain.
+
+
+2.1.2 A truthful ecosystem
+
+The textile ecosystem of TextileChain uses the DAG technology as the data layer for the bottom layer of the block chain and P2P network, and the block protocol is the overall structure of the executive layer and the application layer. The Token used for circulation and payment on the chain is called TEC..
+
+At the beginning of the project, the first thing to be solved is the supply chain of production, logistics, warehousing and stores in the textile industry, so as to reduce the pressure caused by the imbalance of enterprise inventory. This system is an open system, it does not need to establish different chains to distinguish the differences between different enterprises, as long as the RFID tags through block protocol authorization identification, the establishment of network management can achieve the common use of distributed networks. There are no mistakes yet. Later on, various functions will be put on line to solve the problems of brand management and anti-counterfeiting, design copyright and transaction, the right to invent fabric accessories and the intellectual property rights of new textile technology in printing and dyeing, etc. Title The system is open, mainly used for the trusted management of textile enterprises in China and the whole world, and also used for the construction of customer-oriented service in textile industry.
+
+2.1.3 Big data application
+
+We call big data application the application that requires high computing power and high data throughput. Mainly include artificial intelligence, drug development, computer vision rendering and so on. The interaction of data between service nodes in such applications is much larger than the block size of current block chain techniques.
+
+We call the application with low delay and high reliability as interactive application. The service of such applications needs to be confirmed within a low delay (possibly in milliseconds), and the acknowledgement time is much less than that of the current conventional blockchain technology. Textile industry chain provides economical and efficient solution for realizing machine learning algorithm and big data's depth analysis.
+
+2.1.4 artificial intelligence
+
+Machine learning algorithms, especially neural networks, are becoming more and more popular in recent years. At present, neural networks have been applied to computer vision recognition, speech recognition, natural language processing, stock market prediction and analysis, and so on.
+
+In order for neural network drivers to emulate the work of the biological brain, computers are given the same, and sometimes beyond, human power. Must be in the neural network as many as hundreds or even thousands of layers of nodes, also known as the in-depth learning network. Projects on deep learning networks need to provide tremendous computing power for their deployment, training, and adjustment. Modern personal computers (such as Corei5 chips, 8Gb memory) can train a network of tens of thousands of samples in a reasonable amount of time, supporting up to hundreds of dimensional input data. But deep learning networks require a larger sample of data, which is currently They are all implemented by GPU with stronger data processing capability.
+
+The textile industry chain provides an economical and efficient solution to implement machine learning algorithms and deep learning networks. The learning process can be accelerated and the learning quality can be improved by assigning the layers of the deep learning network to different nodes reasonably, and only the parameters between the interactive layers and the layers between the nodes. The computing power can distribute data in deep learning network reasonably and provide corresponding benefits.
+
+
+
+2.1.5 Interactive application
+
+As the whole system involves more links, textile industry chain has a strong interactive application. There are also many peripheral ecological interactive applications, which are mainly used in the upper and middle reaches of the textile industry, and are used in the downstream and consumer links as auxiliary applications.
+
+(I) Wallet
+
+Wallet is a storage device of decentralized digital assets. It can establish a decentralized textile industry ecosystem ADecentralizedTextileIndustryEcosystem binding or not binding and so on. It can be used to pay for digital assets and so on.
+
+(2) RFID tag reader and writer
+
+Each link has the corresponding equipment, writes the corresponding block agreement, uses in each link management.
+
+(III) Positioning system
+
+Used to read and locate RFID tags.
+
+(IV) production planning system
+
+Used to set up production plan and overall planning, to carry on the corresponding production management.
+
+(v) supply chain management system
+
+Used to manage the overall supply chain system, logistics and consumption allocation.
+
+(VI) copyright confirmation and trading systems in the textile industry
+
+Decentralization of copyright for design and invention in the textile industry and related intellectual property transactions.
+
+(VII) Trading system for consumer terminals
+
+It is used to record the behavior of consumers in shopping activities, such as the rate of clothing trial wear, the sales of clothes, etc., in addition to financial management, it can also feedback consumers' consumption preferences and provide them to designers and enterprises. For product optimization.
+
+2.1.6 Enabling New Retail
+
+The new retail is simply a "data-driven, consumer experience-centric, pan-retail form." Based on the characteristics of the new economic era, new retail is a C-terminal product marketing activity that greatly excavates customer needs and greatly meets customer experience. And block chain can better enable new retailing, help enterprises to meet user needs and improve user experience.
+
+New retailing needs data support, and there will be more data for listed companies with more offline stores and offline members, and textile industry chains will undoubtedly better help users deal with the problems of data applications.
+
+The textile industry chain integrates resources through the textile industry ecosphere, deeply analyzes the textile industry chain, and traceability technology and block agreement from textile planting, R & D, design, printing and dyeing, warehousing and logistics through block chain traceability technology, At the same time, the block chain technology is applied in the field of consumer shopping, the clothing channel is sunk to the terminal, the global brands of one and two lines are assembled, and a powerful and reliable intelligent supply chain platform is constructed. A comprehensive mall with the most complete function and the most novel business model, to create the world textile industry win-win ecological circle and human harmonious economic community.
+
+The future shopping experience will ushered in subversive changes, the national and textile industry chain innovation, never follow the current, which private customization services, through big data accurate matching, goods will automatically find you, full integration of online and offline. She has a global variety of stylist, from raw materials to design, provide one-on-one professional services, and bring Ⅴ R and AR technology into your life. Here, a mirror can try clothes around the world, the data runs through the application scene, bringing unprecedented shopping experience. Through big data Intelligent Technology, China and the Textile Industry chain for the first time to let you know more about yourself Self.
+
+
+2.2 Scenario Prospect of Textile Industry chain 
+
+2.2.1 Decentralization of design copyright certification and trading systems
+As the development of the textile industry is moving towards the pattern of designers and studios, the patented fashion design, printing design and other process designs have begun to ensure the interests of the relevant designers while maximizing production.
+By authenticating the real name of the original creator and submitting the design scheme of the design work, a decentralized copyright transaction confirmation system is established. A transaction matching system is introduced to push the design scheme of the original creator to the relevant brand-holding enterprises and manufacturing enterprises.
+
+2.2.2 Establishment of Anti-counterfeiting system for Well-known Brand garments
+All high-end brands have RFID tags embedded in their clothing because they are unique, and each label has a small node on it. It contains information on the flow and transaction of the garment from processing, logistics, warehousing to sales stores, and even the identity code of the participants in the whole process.
+Readers, positioning systems and built-in block chain protocols are available throughout the process, and the clothing's brand authenticity and traceability can be obtained through an intelligent mobile device with NFC.
+
+2.2.3 Credible Management system of Textile production process
+All high-end brands have RFID tags embedded in their clothing because they are unique, and each The management in the whole system is designed from the place of production of raw materials to the store sales. The main purpose is to build brand and trace the source of raw materials, as well as production management and material allocation. To the end of the channel sales and after-sales service the entire process.
+2.2.4Information Management of Raw material production sites
+Raw materials are very important in the textile industry. The origin and quality of raw materials are closely related to the production conditions downstream of the entire textile industry, and are closely related to the raw material climate of natural fibres and the cultivation and breeding conditions of cotton, hemp and wool. At the same time, the origin of different raw material quality also has an impact.
+
+When the manufacturer confirms that it wants to purchase the raw materials, it will attach a RFID label to the batch of raw materials, which contains the important information of the batch of raw materials, including the origin, growth time, material quality, fiber quality, harvest situation, etc. By uploading the block chain to the network, the enterprise can get the raw material information and start organizing the production plan. In the whole process, the positioning system is installed in the logistics vehicle, the logistics environment detection equipment, the RFID reading equipment and the signal transmitting system, and the raw material logistics information is transmitted to the network system in real time. Manufacturers can accurately obtain raw material supply information.
+
+When the raw material arrives at the factory, all the information about the raw material is fully inherited. The raw material of the batch of yarn can be recorded in the RFID tag of the yarn to be processed.
+2.2.5 Production link management
+At the early stage of production, a corresponding production plan was drawn up, through which the purchase of raw materials was carried out, because there were more kinds of fabrics and accessories involved in the garment production process. Through the RFID logistics system to monitor the different batches of raw materials and calculate the time, as far as possible to do a good job of seamless production scheduling. Relevant information is recorded on the block chain and can be used for scheduling and optimization of later production plans.
+
+Production is basically a pipelining operation, each person will be in different links, card management is far less efficient and credible management through the RFID tag and block chain technology combined. Starting from the raw material, each fabric has a corresponding RFID tag. In the relevant links, the production code can be obtained independently, and the time to enter the corresponding link and the information of the processor can be automatically written through the receiver and the writer. Each link will automatically obtain storage, before entering the next link automatically upload information. Used to record the workman's working hours and the number of jobs, and later when the quality of the product has a problem, can be very large Easy to find the corresponding product responsible person, can effectively improve the quality of the product. In the salary settlement, by reading identity and position chip information, automatically calculate the day or then wage performance.
+2.2.6 Warehousing link management
+The warehousing link is the link that enters the warehouse after the production link, divides into several stages: the storehouse inspection, the storage location and the out of storage confirmation, each link has the corresponding reading and writing equipment to record and write the corresponding information, Corresponding blocks are formed in each link and are connected with the block chain of each link.
+
+In the process of warehouse management, we should also obtain information on production, logistics and sales links at any time, carry out timely distribution of goods in warehouses, ensure that the sales links need to be met, and at the same time reduce the inventory pressure of the sales channels. At the same time to the new product allocation appropriate storage units. In the balance of inventory is an important link, but also the key to profit.
+2.2.7Logistics link management
+In this link mainly is the storage link and the sale channel between the dispatch, through the localization system RFID system real-time monitoring logistics information, not only facilitates the production plan scheduling, but also may carry on the balance to the upstream and downstream.
+2.2.8 Sales link management
+Sales links are mainly the management of stores and sales channels, stores can record the sales of goods, but also to record customer information and preferences, and so on. In this link, the customer can identify the goods through the relevant equipment, trace some of the goods and determine the anti-counterfeiting. Each product has a corresponding TEC for customer's consumption incentive. The generation of TECs is mainly obtained in the whole process and ultimately used to reward the consumer. TEC held by consumers can be used for textile consumption, can also be traded as digital assets, and can also be used to query the basic information of a commodity, the Information service cost.
+
+
+2.3  Application principle of TEC
+
+1. Industrial ecology
+
+The natural distributed nature of block chains is a powerful tool to counter centralized oligarchs. The transaction matchmaking service which has to rely on the centralization platform can be realized by the public transaction system based on the block chain technology. It can completely liberate the special platform chain, and the cost will be greatly reduced because of the dependence of many people who are redundant. At the same time, since block chains can achieve selective sharing of information at low cost, data isolated islands that were originally dispersed in various countries can also achieve a high degree of unification after being connected and interlinked with big data automatically through TEC. For the development of this platform and the subsequent reproduction and derivative service product development and operation, there is a great deal Benefit.
+
+In the future, there are four possible directions for the development of industry digital money.
+
+(1) Digital currency has become a global digital asset and investment, which is also the main role of digital currency in the world.
+
+(2) to become a financial instrument in a particular scenario. At present, there is a long time and high cost to transfer value between different liquidation systems in the world, and digital currency, as the medium of global flow, can solve this problem very well.
+
+(3) Digital currency has become a new payment network, but the development of payment network is not clear because the new Internet finance company has upgraded and innovated the industry separately. At present, some domestic digital currency has completed the means of payment, such as Fuyuan currency and so on.
+
+(4)A development trend with a wider range of innovation and more imagination. Digital money and block chain technology has become an innovative protocol for distributed transactions, intelligent contracts, decentralized systems, the Internet of things and other areas to help these areas develop more rapidly.
+
+2. Each chain starts the real operation, the terminal obtains the data analysis, the control, the transaction.
+
+Distributed start and end points also become nodes in each chain, each node can effectively record the information used in each chain: time, place, time transaction and feedback.
+3. management model
+
+In this project, each investor becomes a shareholder, their income is visible, real-time, they need the truest, non-contentious record, only the block chain can do it.
+
+4. Management mode
+
+Using block chain management mode can save a lot of complicated manual and online transaction management costs.
+
+5. Monitoring and retention of violations
+
+The traditional mode of supervision depends on deterrence, detection and punishment of irregularities to complete the regulation of market behavior. This involves two major steps: the detection of violations and the original record, and the punishment based on the records. In the traditional mode, both time and labor costs are high, so they rely on deterrence, and in fact most violations are not regulated.
+
+Block chain technology can provide electronic, transparent, unalterable records, greatly reducing the cost of detection and search of violations. In fact, smart contract technology based on block chain technology can enforce the business of the participants, including everyone using the car in the project
+
+Conduct in line with regulatory standards, greatly increasing the difficulty and cost of violations. Considering the further development of the future shared economy, new applications are emerging, high frequency, instantaneous, massive transactions are increasing, the traditional regulatory model is bound to be inadequate. Block chain features can help regulators to facilitate each layer
+
+To monitor the market.
+As the smart contract matures, the block chain naturally evolves from the recorder of information to the executor of the transaction
+
+Low-cost automated transactions can greatly reduce transaction costs, combined with the Internet of things, the development of previously unimaginable application scenarios. When transaction costs approach zero and automate, users can really save time, work, low price, convenient and intelligent sharing. With block chain to provide convenient intellectual property protection and charging means, fragmentation of the sharing will be more dynamic.
+
+6.Trust credit
+
+In the face of block-chain transparent data, credit forgery and past misdeeds are almost impossible to hide. Transparent and traceable records recorded on the block chain can easily counter the generation of false credit. Therefore, there is a distrust of credit, that is, the transaction between the platform and the user without the traditional so-called "trust", but only the block chain of the real record of credit can be completed.
+
+With reliable data endorsement based on the block chain, both the demand side and the provider can easily inspect each other at the booking stage and facilitate the transaction. Adding electronic signature to the transaction and verifying the true payment can greatly increase the manufacturing cost of false credit. With big data's analysis, the cost of detecting false credit can also be greatly reduced.
+
+7.Inconvenience of payment guarantee
+
+Block chain innate payment function, used in the field of shared payment can be said to be natural. With the advance of intelligent contracts, automated payment can enhance the experience of users and merchants.
+
+8.Applications that most benefit from shared data also include upstream and downstream of the same industry
+
+For example, the combination of cultural exchanges, e-commerce, real estate and other industries, can integrate a variety of additional services, and TEC can seamlessly connect with it. In this mode, the traditional standardized service and the individualized sharing economy can learn from each other and optimize the user experience.
+
+9.As the smart contract matures, the block chain naturally evolves from the recorder of information to the executor of the transaction
+
+Low-cost automated transactions can greatly reduce transaction costs, combined with the Internet of things, the development of previously unimaginable application scenarios. When transaction costs approach zero and automate, users can really save time, work, low price, convenient and intelligent sharing. Supported by the convenience provided by the block chain Agile intellectual property protection and charging means, fragmentation of the sharing will be more dynamic.
+
+
+
+
+chapter three：Technical support of Textile Industry chain
+
+TEC is designed to be integrated and enhanced based on the concept of Ethernet Smart contract Protocol, enabling third-party service provider developers, vendors, users, and users to create any kind of consensus-based, extensible, standardised, Fully developed, easy to develop, and coordinated applications.
+
+Building the ultimate and abstract base layer-a block chain built into the Turing complete programming language-allows anyone to create contracts and decentralize applications by using ethernet bottom technology. And set up their freely defined ownership rules, trading methods and state conversion functions. In the TEC system, the state is composed of an object called an account (each account has a 40-byte address) and a state transition group that transfers value and information between two accounts. An account similar to that in etherhouse TEC consists of four parts: random numbers, used to determine that each transaction can only be processed once Counter; account balance; account contract code (if any); account storage (default empty).
+
+TEC uses P2P distributed signature system to ensure security. P2P network has the characteristics of self-organization, load balancing, fault tolerance, low cost, high availability and so on. P2P network composed of a large number of peer nodes can provide enormous computing power and low cost. The completed digital signature computation is dispersed to the P2P network.
+
+
+3.1Block agreement
+
+In the TextileChain block chain architecture, the programmability of the block protocol will be used to execute the logical protocol and will run between the underlying chain, the data layer and the application layer. Block protocols can be customized and characterized according to the needs of different scenarios, and can be more suitable for the needs of different segments and participants.
+
+A block protocol is not just a computer program that can be automatically executed: it itself is a system participant. It responds to received information, it can receive and store value, it can also send out information and value.
+
+In the design of block protocol, the modular design will be adopted, and it will be applicable to the unified design of block protocol with different links. As long as the relevant data is set up, the defined block protocol can be quickly defined.
+
+
+
+
+
+
+
+
+
+
+
+Based on the block agreement, it is still not mature, because it is not suitable for the industrial and commercial application. TextileChain will adapt the existing block agreement to the application of various processes in the textile industry through the transformation of the existing block agreement. Because of the particularity of the ecosystem, the participants under the block agreement will be authorized to participate, but not completely open.
+
+This program is like a trusted person who can temporarily store assets and always perform operations according to prior rules. The diagram shows a common block protocol model from left to right: a piece of code (block protocol), deployed on shared, duplicated books, that maintains its state and controls its assets. And respond to received external information or assets.
+
+On the one hand, the block agreement of textile industry chain introduces equipment event, which can trigger the execution of contract or the change of state under certain conditions; on the other hand, the device can also write a callback function to the contract. The device is notified when the contract enters a particular state and the device does the appropriate operation.
+
+The block agreement of the textile industry chain is a channel for the flow of value between the chain and the chain, and is usually used for some low-frequency interactions between the equipment and the public chain, or between the device and the device.
+
+Consider the following two protocols:
+
+Protocol 1: when multiple devices work together to handle a business, a mutual agreement is signed to guarantee the contribution of resources to the project and to deposit a bond in the agreement. If a device wants to quit, the device can notify the agreement in advance of the termination request through an event trigger, and the agreement returns the deposit to the device account; conversely, if the agreement sees that the contribution of one of the devices does not meet the promised goal, You can execute a callback function to notify the device while confiscating the margin.
+
+Agreement 2: a commercial extension is made on the textile industry chain equipment, and an agreement is signed with the extender to expand a new user for each device and transfer funds from the promoter's account to the equipment account.
+
+
+3.2 Consensus mechanism
+
+The witness mechanism is designed on the consensus mechanism of DPOS. The witness can be elected by election, the user can submit to participate in the election, and after paying the deposit, he can become the candidate witness. After obtaining the witness qualification, the system assigns its witness user in accordance with the rules. All witnesses will share the transaction fees paid by the witnesses, who are randomly assigned and published by the system in advance, and will be re-assigned to the witnesses after a period of time.
+
+Because of the particularity of DAG technology and the fact that RFID tag is also a relatively small node in the ecology, it will only be accessed by the network when the reader reads it. The RFID tag can only be paid through the reader, but it still has a high probability of loss or damage. However, due to the large number, a certain proportion of the actual effect will not affect the integrity of the block chain data.
+
+3.3 Bottom DAG Technology
+
+The textile industry chain involves the ecosystem of the whole industry chain of the textile industry. It will be applied to the management of the whole textile industry from raw materials to design to production to sales, and will establish a huge ecological community. At the same time, the nodes based on RFID tags have limited data storage space, the number will be very large, need to consider the size of nodes, transaction speed, high concurrency and transaction security and other issues.
+
+DAG (Directed Acyclic Graph) Directed Acyclic Graph (DAG) has no concept of Block in design. It only needs the transaction executor to package and broadcast the transaction on his own initiative to complete the transaction. Not all single nodes need to download the whole network transaction data to complete block-to-block accounting of transactions.
+
+The particularity of DAG design, when a unit is changed, the hash value of all its children will change, so there will be exponential modification, and any modification must be approved by everyone. There is no chance of a 51% attack. When a unit is created and broadcast to the network, other users will verify and be referenced to the newly created unit, so that each user in the network contributes to the network. In the case of double flowers, because DAG's units have direct or indirect parent-parent relationships on page 34, they can form ordered units. Even multiple transactions at the same time can be easily identified.
+
+
+
+The functional components of the smart contract include:
+
+A Development run time environment, including:
+
+Provide programming language support, if necessary to provide a complete set of integrated development environment;
+
+Support for static and dynamic checking of contract content;
+
+Provide support for running carriers, such as virtual machines;
+
+For the intelligent contract that interacts with the external data of the block chain system, the influence scope of the external data source should be limited to the scope of the intelligent contract, and the whole operation of the block chain system should not be affected.
+
+B storage environment, including:
+
+To prevent tampering with the contents of the contract;
+
+Support multi-party consensus under the contract content upgrade;
+
+Support for writing contract content to account books.
+
+
+[PoC contribution proof function]
+
+Effective Data*25% Algorithm*25% storage resource 20% Activity*15% Online Time*15% reward mechanism: when a miner discovers a PoC block, the block award is cut in half every four years for 1000 NUC, until less than 1 NUC, out of the block is calculated at 1 NUC and continues to be dug out.
+
+The proof of PoC contribution is based on the mechanism of AI deep learning. The higher the contribution value is, the higher the mining probability is.
+
+
+
+Using the AI depth learning method to realize the node consensus based on the PoC contribution proof, that is, the PoC Law.The data consumer sends out the request and broadcasts, the data provider chains the data, carries on the matching transaction through the AI depth learning, realizes the effective data contribution. Namely: AI data value discovery / Aix s Rulebase.
+
+
+
+3.4 PoP algorithm design
+
+(I) Election block generators
+
+In the PoP consensus mechanism, the system first selects a wide range of representative accounts as candidate accounts. When selecting a candidate account, the system considers several factors simultaneously: for example, the geographical distribution of the account, the business type of the account, and the contribution of the equipment associated with the account. Candidate accounts are broadly representative, a method that is very close to the people's Congress system, where each people has the same voting power and is a leader in their respective provinces and industries.
+
+The community votes on the candidate account generated by the system. According to the number of votes obtained, the system selects a total of N accounts as the block generator according to the probability, where N is decided by the community vote. The more votes a candidate account gets, the more likely it is to be selected as a block generator. Therefore, the final selection of block generator has both broad representation and community consensus. Community voting allows for the elimination of accounts that, while contributing to the equipment, are not active in community building or are malicious against the ecology of the textile industry chain.
+
+(2) Block generation
+
+The textile industry chain produces a block every fixed T second, where T is determined by community vote. A period of time per N block. In a period of N interval, block generator in a certain order to produce blocks. If one of the block generators does not generate the block within the specified time interval, the interval is skipped and the next block generator generates the block, so that the interval between the two blocks becomes 2T seconds. In the next cycle, the order in which blocks are generated by the block generator will be randomly switched, so that good interworking between the block generators can be maintained, and blocks with a lower probability will be avoided. The chain forks into a fixed development model and cannot be merged.
+
+In both cases, the community needs to re-vote for the new block generator:
+
+* the system realized that the state of the equipment had changed greatly and submitted new candidates to the community.
+
+: some block generators do not perform their duties and do not generate blocks for long periods of time.
+
+(III) transaction confirmation
+
+When the block generator's participation is 100 percent, the block chain does not have any forks, and an average transaction can be confirmed within a few seconds. But if a software error occurs, the network is not smooth enough, or some block chain creators are malicious and result in forks, a transaction requires at least
+
+
+
+
+The network technology is one of the core technologies of block chain. In the decentralized network architecture, the block chain can realize the characteristic of not relying on the central network. The block-chain network protocol generally adopts P2P protocol to ensure that each computer in the same network is equal to each other, and each node provides network services together, and there are no "special" nodes. Different block-chain systems make their own P2P network protocols as needed, such as bitcoin and Ethernet.
+
+
+
+3.5  Third party tool integration
+
+3.5.1 Node contribution
+
+Device nodes can measure their use of device resources, such as CPU, memory, bandwidth, storage space, and transaction attributes, and record them in the form of contracts. Transaction attributes are used to indicate the urgency and importance of a transaction.
+
+We propose a PoP (ProofofParticipation) algorithm based on account participation, which combines the idea of PoI and DPoS, which can not only ensure the fairness of the device, but also have community consensus. The current PoP algorithm is not designed according to the ultimate goal of the textile industry chain, but still optimizes the consensus algorithm within the current block chain technology. Textile industry chain is the joint optimization of block chain technology and textile industry demand.
+
+As the previous example shows, simply using account importance to allocate accounting rights is not the optimal solution, so the consensus algorithm for the textile industry chain will evolve as the project evolves and advances, and will be adopted after the community-shaped consensus is reached on page 37
+
+3.5.2 distributed data layer
+
+P2P network technology plays an important role in enhancing network communication, file exchange and distributed computing. In P2P network, each node is a server, and each node undertakes limited computing and storage tasks. The more nodes join the network, the more resources the nodes contribute in the network. The service experience that the whole network user obtains also is better.
+
+P2P network technology fully embodies the following characteristics: decentralization, scalability, good tolerance, high cost performance, privacy protection and load balancing, etc. P2P network is used for distributed storage of data. The right to confirm the content is generated by the network protocol, and the hash value is recorded on the block chain after the secret operation. The ownership of the relevant content is determined by the authenticated network integration of the OAuth protocol.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.6 Hardware development and open source
+
+The textile network of things hardware equipment is mainly constructed by RFID chip hardware platform, which can label objects, events, people and other entities, and connect them through the network. Block chain technology provides value transmission and builds technology-based trust mechanisms.
+
+3.6.1 Textile Industry chain RFID Technology
+
+Radio frequency identification (RFID (RadioFrequencyIdentification) technology, also called radio frequency identification, is a kind of communication technology, which can identify a specific target and read and write related data by radio signal without establishing or optical contact between the identification system and the specific target.
+
+RFID reader can be divided into mobile and fixed type. At present, RFID technology is widely used, such as library access control system, food safety traceability and so on. Radio frequency tag is the physical carrier of electronic code (EPC), which is attached to traceable objects. It can be circulated all over the world and can be identified and read and written. As a key technology to construct the "Internet of things", radio frequency tag has attracted much attention in recent years.
+
+RFID tags are physical carriers of product electronic code (EPC) that contain electronically stored information that is attached to or embedded in traceable objects that can be globally circulated and identified and read and written. There are three types of semi-active and active. Passive can be driven by receiving electromagnetic waves from the reader. When the tag receives a signal of sufficient strength, it can send data to the reader. These data include ID numbers (globally unique ID) and pre-existing data in the label EEPROM. The semi-active has a small battery, and the power just happens to drive. The dynamic label IC, makes the IC work. The antenna can be used as a return signal without receiving electromagnetic wave. Semi-active is faster and more efficient than passive. The active label has an internal power supply to power the internal IC to generate external signals. The active tag has 39 pages with longer read distance and larger memory capacity that can be used to store some additional messages sent by the reader.
+
+RFID tags have good performance: fast scanning, miniaturization and variety of shapes, anti-pollution and durability, repeatability, penetration and unbarrier reading, The large memory capacity of data and the high information security after password protection can not only help enterprises to improve the efficiency of goods and information management, but also have the characteristics of long distance reading and high storage. It can also make sales enterprises and manufacturing enterprises interconnected, thus more accurately receiving feedback information, controlling demand information, and optimizing the whole supply chain.
+
+Design Features of RFID label for Textile net
+
+The RFID tag itself has the following characteristics:
+
+The main contents are as follows: 1) each label has unique identification information. It binds the label to commodity information or identity information in the production process. In the subsequent circulation and use process, the label all represent the corresponding commodity and identity.
+
+2) the high security label itself has a reliable security encryption mechanism, which is adopted by the second generation resident ID card and subsequent bank card in China.
+
+3) verifiability can be verified in a very simple way, whether before, during or after sale, as long as the user wants to verify it. With the popularity of NFC phones, the user's own mobile phone will be the simplest and most reliable truth-testing device.
+
+4)the preservation period of labels with long storage period can be up to several years, years or even years, which is sufficient for most products.
+
+The application of block chain technology should be fully considered in the hardware of Textile Chain Internet of Things. The application characteristics of block chain technology should be fully considered in the design of RFID tags and readers. The communication interface protocol has achieved the application of block chain technology in the Internet of things.
+
+Each label can be used as a node to store block units in its own trading process. 2) the tag itself does not automatically generate random public and private keys, and it is endowed with uniqueness in the process of production. According to the functions of each chip, it will be encrypted and identified commodity binding in the process of production. At the same time, generate random public key and private key, so that can not be forged and not tampered with. 3) the tag itself is not stored by big data, and the corresponding information is stored by distributed network and block chain to prevent the data from being deleted and tampered with. This document will no longer work on how RFID works This paper expounds that RFID chip is relatively mature and has a broad application prospect at present. The problem of value transmission and mutual trust is mainly solved by combining with block chain technology.
+
+
+3.6.2 Summary of Application rules and system characteristics of Token
+
+According to the needs of different applications, we design corresponding software, web page app or devices that encapsulate the related functions, which can be used to meet the different needs of the scene.
+
+The application layer needs to be connected to a wide range of applications, mainly for the clothing industry in industrial processes, creative design rights, traceability security and production process management, as well as related product sales channels applications, Can enable the relevant applications to achieve rapid access.
+
+In the whole system, the application layer is only to facilitate the expansion of the application, all transactions and direct interactions are based on the corresponding application to reflect. As long as the user has the corresponding public and private key and identified identity, the transaction authorized by the private key is executed through the platform.
+
+TextileCoin is a token used for payment and transaction on the TextileChain block chain network. It is an important digital asset in the whole network system. It will generate a total amount of 50 million in the original block, accurate to 10-8, and will not be issued.
+
+The functionality of TEC in block chain networks:
+
+: incentives for value added services provided by ecological participants to transactions;
+
+: incentive settlement and corresponding business transaction vouchers for the mission system; deposit for witnesses to online transactions;
+
+: community voting and governance;
+
+* for the calculation of man-hour and workpiece costs in the textile industry, etc.
+
+System characteristics:
+
+1) readers with corresponding functions in each link are connected to the system network.
+
+2) the enterprises or institutions in each link will record all the DAG units associated with them, the main purpose of which is to avoid the loss of relevant unit data after the RFID tags are damaged and lost, although this may be very low.
+
+3) on some nodes, each link is transparent, and the advantages of the deployment system used in the whole process are as follows:
+
+: genuine traceability and anti-counterfeiting can be achieved;
+
+: management costs can be reduced;
+
+* we can achieve trust intermediation through centralization.
+
+: the management of intellectual property rights in the textile industry can be achieved;
+
+* effective branding management can be achieved.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter five:Issue Mechanism
+
+TEC tokens are the blood that drives the decentralized TEC platform ecosystem. It is mainly used in consumer payment, data mining, community award and so on in textile industry application field. It can also be directly used to purchase self-supporting services on TEC platform. We will encourage institutions and individuals to develop subchains based on TEC. At that time, the exchange of data between sub-chains, the execution of intelligent contracts and the exchange of assets and information will consume TEC tokens to become the common currency in the whole chain ecosystem.The total number of TEC issued is 91 million.
+1.The distribution is as follows:
+
+scheme	scale	quantity	explain
+Foundation operation	30%	27.3 million	For platform new user registration awards, building member communities
+Private equity investors	30%	27.3 Million	For early investors and partners who contribute to platform building and community development
+Enterprise investor	10%	9.1 million	For early investors, the proportion of public funding 1:10000, hard top 4000ETH, public chips only receive ETH
+Founding team and Development team	5%	4.55million	For TEC team technology research and development, platform operation and maintenance, community construction and marketing, etc., lock warehouse for 2 years
+Continuing Business and technological Development	20%	18.2 million	Market promotion, daily release to trading users, through transaction fees returned way to reward users
+Commercial landing promotion	5%	4.55million	For commercial promotion
+
+
+2. Mode of sale: this TEC swap accepts ETH.
+
+TEC ratio: 1 ETH / 800TE
+
+
+
+5.1 currency circulation
+
+TEC is the only official token for payment and circulation in the ecosystem, and all transactions and services support TEC.
+
+Merchants need to mortgage TEC, and can also obtain services through payment of token, such as exchange marketing resources, such as: specific traffic and resources, specific marketing activities registration qualifications, platform marketing privileges.
+
+Consumers need to pay TEC, for buying money from merchants, and consumers can get TEC rewards by participating in activities, completing tasks, inviting friends and so on. Other ecological roles include financial rights, entertainment rights and so on. For example, financial supply chain finance, value-added financial management.
+
+5.2 "Deposit is done"
+
+TEC is the trading platform's own equity proof, will use the new "trading is mining" mechanism. TEC issued a constant total of 320 million, and promised never to issue additional. Most of the transaction fees will be distributed to TEC holders in a timely manner. And TEC, as a representative of community rights, has the right to vote and arbitrate disputes.
+
+
+
+5.3 Super contributors
+
+By introducing reputable investment institutions and reputable partners, the primary responsibility of the super contributors is to assist in professional voting and evaluation of the merchants applying for the chain. Through their expertise and expertise to help users identify quality merchants, while reducing the risk of investment for users.
+
+Applications to become super contributors must guarantee the rights and interests of 100 million TEC, super contributors in the account, including: preferential access to the first instance for merchants nominated by super contributors, and voting and review of the first instance merchants by super contributors. Voting without payment of TEC.
+
+5.4 TEC Special Fund
+
+TEC is the core of ecological construction. With the gradual landing of the application scenarios TEC holders as ecological participants will also receive more and more value feedback. Community Fund is one of the application scenarios based on TEC, which is launched to get the support of users, project partners and partners. The Community Foundation offers 10% as a reward for the "deal is mine" model, which is returned to TEC holders in the form of equivalent consumer cards (e.g. Amazon consumer cards, Apple cards, phone recharge cards, etc.) through transaction fees.
+
+5.5 Community Feedback
+
+When 10 per cent of the returns and rewards from the Community Fund are completed, 70 per cent of all transaction fees will be returned to TEC holders in the form of dividends. Twenty percent of all transaction fees will go back to community-specific funds, while the remaining 10 percent will be used for technology development, security system maintenance, and ecological improvement. A new Community Fund will be set up for the next issue of community feedback.
+
+
+
+Chapter six:TEC ecosystem
+
+6.1 TEChain operator
+
+Singapore founded the TEChain Foundation (TEChainFoundation,), a foundation whose main mission is to run TEChain networks openly, fairly and transparently without targeting profits and to support TEC's development team.
+
+The TEC Foundation will be established with the approval of the Singapore Accounting and Enterprise Management area (ACRA) and is regulated by the Singapore Company Law. The Foundation is operated independently of and independently of the Government by a fiduciary board or board of trustees.
+
+Singapore is known for its stable and sound laws. The Financial Environment Foundation is a non-profit organization (Non-ProfitEntity) established in Singapore. Under Singaporean law, the Foundation is designed to support or participate in activities in the public or private interest. A legally constituted organization that has no commercial interest.
+
+The profits earned by the Foundation, known as surpluses, will continue to be retained as funds for other activities, and not to be distributed among its members. TEC will establish the root services of each country and content review committees relevant to its laws, To ensure that the content in the country is in line with the local laws and regulations and culture. On the basis of legal compliance, cultural style is defined by the flow center according to its own cultural definition, and by belonging to its ethical and cultural review board.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.2 TEC technology development team
+
+The founding team of TEC includes a very experienced group of innovators, programmers, system architects, and members of the industry's leading legal and business elite. The members of the TEC team that are also optimistic about future developments in this area include: core
+Members, strategic advisers and strategic partners are introduced as follows:
+
+
+                                                     
+                                                                       
+Artificial intelligence expert: Franky Branckaute
+Ph.D. from MIT, a former associate with Google, Microsoft's artificial Intelligence Program, and now a consultant on artificial intelligence for Trine Chain.                                                
+
+Artificial Intelligence and Confidential Protocol architect:Zam ONG
+
+Zam Ong has 15 years of experience in technology development, is an expert in artificial intelligence, has been responsible for digital cryptographic currency research and development and artificial intelligence project. Zam design Viola.AI block chain and artificial intelligence technology, created a powerful Viola.AI, A decentralized artificial intelligence engine.
+
+
+
+                                                                
+
+Block chain Technical expert: Jack Brandon
+Jack worked for Google, one of the world's largest Internet companies, working on technology research and development, in-depth research on the underlying technologies of the block chain, and a member of the core research and development team at Ethernet Square to develop a decentralized digital money mechanism. A decentralized mining network and software development platform are created, which make great contributions to the development of block chain and encrypted monetary network.                       
+
+
+
+
+
+
+adviser: HONG TIAN WANG
+More than three years ago, Hong Ting, the pioneer of digital cryptographic money, was the founder of Botbot.AI and 2359 Media and CEO, provided artificial intelligence technology services to corporate customers
+
+
+
+
+adviser: PETER SIN
+
+Peter Sin is head of the Singapore Digital encrypted currency and Block chain Industry Association (ACCESS) Digital currency Association and co-founder of the Singapore Bitcoin Club, the country's largest learning community for digital encrypted currency transactions. ICOs, as a consultant includes the MEGAX, VRT world and Bounties. Peter is a senior financial expert at Singapore Financial Consultants for his frequent participation in digital cryptographic currency issues in forums and seminars.
+
+
+
+
+
+
+
+
+adviser: CALEB YAP
+Caleb Singapore Bitcoin Club co-founder, Singapore's largest digital cryptographic currency trading learning community. He often holds educational seminars to discuss related topics. In the area of digital cryptographic money, its unique investment strategy and perspective, highly respected by the local community. He is also a real estate consultant and works for one of Singapore's largest real estate agencies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.3 Project investment institutions:
+
+
+                             
+
+
+
+Hong Kong woodpecker clothing co., Ltd.
+
+
+                                
+ 
+Guo he home co., Ltd.
+
+
+6.4 TEChain cooperation agency
+
+Cardinal crocodile
+
+Caesar the Great, Samarachia.
+
+Hong Kong woodpecker holdings limited
+
+Zhuang Zaini fashion leader ilovejamy Spain FERRO crystal gold / Diana & Emma youareyou Barrick gold collar before Besman GOODLOOK/see u soon Cesman GOODLOOK/see u soon
+
+VJC Vijs Hao Haidong Divino DEVINO KADUNI BONINI Tim TINTORI SHATTAN Sha Tin OWL Oval
+
+(this white paper shows only the names of some organizations, with a total of more than 300 strategic partnerships. Please refer to the official website for details.)
+
+6.5 Advertisers
+
+As community traffic increases. The growth of community groups. TECcoin will gradually connect with the community to have a good advertisers, advertisers will spend TEC for advertising promotion, some ads will be received as a reward for the TEC community users.
+
+
+
+We are Growing an Ecosystem
+Within TEC we are creating shared incentives for efficiency instead of inefficiency.TEC fuel grows in value the more efficient the network gets. We are developing TEC, building TEC, building an app development community and building a host network at the same time so we can build a thriving ecosystem.
+
+Why would application developers build and run on TEC ? Because TEC offers:
+●RAD tools (Rapid Application Development) to get them started.
+●Use of familiar programing languages (like JavaScript) for their apps.
+●Their app leverages user assets, and they realize their users may still want to keep a copy (like social media, Wikipedia, blogging platforms, etc.).
+●Interoperability with other crypto apps in the ecosystem.
+●Side channels and off-chain computing for Ethereum that is still decentralized.
+●Core modules and services they don’t have to rebuild (Distributed PKI, key revocation and management, sovereign identity, indexing and search, content addressability, app store for distributing your app, backups, file sharing, etc.).
+●Use of a hosting infrastructure which automatically scales as the user base grows, and where a significant portion of your users may self-host.
+
+By combining technical, currency, and dApp development into one ecosystem we are able to create a business that:
+
+●Has a small central footprint (not many employees necessary) and lightweight infrastructure;
+●Creates value (reputation, money) for hosts, developers, and users rather than the network owner;
+●Keeps hosting fees and transaction fees to a small portion of all TEC  fuel transacted;
+●Allows for governance power to reside within the ecosystem, diminishing the need for out of touch boards and management teams to exert central control;
+●Has agile boundaries between jobs for employees, contractors, and community;
+●Ensures that fees go into future features and infrastructure expansion rather than profit taking.
+
+
+Monthly Transaction Volume (Currency)
+This chart shows some samples of monthly trading volumes in cryptocurrencies in comparable functional spaces asTEC fuel which range from $300 million/mo to over $13 billion.19
+
+
+
+Funding Innovation: Bonding ICO with Crowdfunding
+We are taking an innovative approach to funding TEC, running separate crowdfunding and ICO campaigns.
+
+Our ICO is a presale of hosting credits. The hosting will be provided by the boxes sold in our crowdfunding campaign. We need the crowd as stakeholders in the whole project and its future. People participating in the crowdfunding primarily as hosts and developers become stakeholders along with pre-sale credit purchasers through the ICO. This is critical to creating a thriving ecosystem.
+
+We intend to run a sale that is as inclusive as possible, meaning future TEC hosts and users will not be pushed out by a few rich people buying all available credits within minutes. We also intend to act responsibly by having a meaningful cap on the amount of credits we allow ourselves to sell, instead of just raising as much as possible.
+
+In December 2017 and January 2018,TEC will establish its infrastructure and services through a sale of hardware hosting nodes, developer training, application development support, data hosting, and data processing. This process will take place through a tripartite strategy aimed at reaching a broad number of users and hosts, all the while ensuring access to the funds needed to deliver these products.
+
+
+TEC Development Roadmap and Timelines
+
+
+	TEC	TEC	Apps
+Q1 2018	Crowdfunding campaign and ICO to raise capital for TEC, grow TEC network, and attract initial developers..	More Al TEC 0 releases First AlTEC 1 release.
+New Features: publishing headers, transaction bundling, better debugging, gossip refactor, application bridging, performance benchmarking, upgrade error handling	Refactor Core Service Apps: Anchors, DPKI, Personas,TECdex,App Store.
+Enhance Demo Apps: Clutter, Coin Toss, Wiki, Chess, DAO/voting
+Q2 2018	TEC AlTEC software testing release to Indiegogo early adopters.	AlTEC 2 including new dev API Refactor in Rust & Web Assembly pluggable governance.	Integrate pluggable governance for easier app updates
+Q3 2018	IndiegogoTECPort boxes shipped to hosts.
+First test transaction on TEC using TEC fuel.
+Reaching 2000 hosts.	AlTEC 3 includes security audit and the ability to adjust DHT parameters and behavior.	Core app services available:
+-TEC Directory (as pkg mgr)
+-DPKI & Identity Services
+-TEC Index
+-Smart Caching.
+Q4 2018	100M test transactions per hour on TEC using TEC fuel.
+Test net of TEC running on 10,000 host device.	TEC Beta Release. Commitment to backward compatibility and more security audits.	TEC App Store / Package Manager is live
+50+TEC based applications that have been created to date. Partnerships established for other asset-backed currencies (energy, food, housing, etc.).
+Q1 2019	TEC running on 20,000 host devices.
+Number of TEC nodes has surpassed number of bitcoin nodes.
+Approaching production level sophistication.	Peer-to-Peer applications onTEC reach 50 apps and 10,000 users (with apps that don't require paid hosting to smooth out imbalanced production/consumption).
+Approaching production level sophistication.	Replacement for gmail / gdocs / collaboration tools app available as beta on TEC.
+
+Why TEC’s Strategy Will Work
+TEC takes us beyond the limitations of blockchain
+TEC fuel takes an agent-centric approach to cryptocurrency design rather than a data-centric approach. In doing so, the TEC crypto-accounting system surpasses the efficiency limitations of similar systems built using blockchain or other consensus-based distributed computing strategies. It is a tokenless crypto-accounting engine. Eliminating tokens makes crypto-accounting substantially
+more efficient. It frees massive amounts of computing power and network traffic from consensus and synchronization of a global ledger of tokens.
+
+We leverage principles from game theory and living systems feedback loops to establish an equilibrium for the value stability of currency units being accounted for. This approach, using TEC, transforms the computational efficiency from blockchains O(n) to O(log n), and also addresses common security issues for blockchain-based currencies.
+
+TEC is a decentralised hosting ecosystem designed to work for you
+TEC provides normal, everyday web users access to decentralized applications without needing to install additional software. This new form of hosting blends small consumer grade devices with other hosting assets to provide an efficient, dynamic, and inclusive hosting ecosystem.
+
+TEC is an ecosystem designed by currency experts not token designers
+The TEC team has vast experience over the last 15 years building alternative currencies. We have designed monetary currencies, reputation currencies, and cryptocurrencies, and alternate value flows to make communities work as intended. We are bringing this experience to build a TEC currency that facilitates an active economy, and we think crypto-accounting is the way to do this rather than crypto tokens.
+
+Asset-Backed Crypto Economy
+IfTEC fuel starts getting used as a more general purpose currency, hosting will become a smaller portion of the economy. This enables more asset-backed currencies for electricity, food, transportation, lodging, and so on.
+
+TEC is driven by a team determined to make decentralized, community-powered applications work in many sectors
+TEC has been developed by the team that is developing TEC as part of its larger commitment to realize, on a broad scale, the innovations of the Metacurrency project. The team views TEC as the first of many projects that will combine the ground-breaking TEC technology, pre-existing physical infrastructure (in this case broadband internet), and transformative design principles for currency, governance, and agent-centric marketplaces. Our team believes in the power of
+large-scale, community-powered applications to change the world for the better, beginning with our alternative to cloud computing — crowd computing. We are building both community and technology. Our fundraising efforts along these lines aim to develop TEC, bootstrap the TEC community, and enhance the functionality of TEC.
+
+TEC gives enormous upside for early adopters if we achieve our bold ambitions 
+The ERC20 token we are selling in the ICO is a credit for TEC. It will be convertible into TEC fuel at launch.
+
+TEC fuel is a currency for purchasing computing (processing, bandwidth, and storage), and thus can be thought of as denominated in compute power.
+
+To establish the initial pricing of that compute power, i.e. the amount of computing you will get for oneTEC, we begin by establishing a benchmark of a known system, Ethereum. We will use a suite of real world compute tasks, both ones that others have run, and ones we run, on the  Ethereum
+blockchain, and use the observed cost in gas to denominate 1 compute unit. These tests will all be visible on the Ethereum blockchain for public reference, and the code shared for anyone to run themselves, if they wish.
+
+The opening price of TEC when the network goes live, will be 1/10,000 that price because we know that running similar computations on TEC chain is at least that much more efficient, if not more so.
+
+So if you send us 1 ETH, we will give the amount of credits that represents the efficiency multiple between ETH and TEC credit established in our baseline tests. If our efficiency multiple when going live is better than the baseline results, then the compute power you can buy with your TEC fuel will be greater.
+
+We currently project that the cost of computation will stabilize closer to 10 million times the efficiency of Ethereum today.
+
+Appendix: Criticisms and Objections
+“You obviously don’t understand ‘Trustless’ currencies.”
+Many in the crypto project space will probably perceive transaction fees being paid to an Infrastructure-provider as centralizing too much authority in one entity. However, paying  maintenance fees to TEC, doesn’t give it a lot of extra power. It primarily enables responsible funding so we don’t need to raise hundreds of millions of dollars to get off the ground. It also enables us to create value stability by having an asset-backed currency.
+
+The main power TEC has, in this context, is to update the software — the same centralized power that exists in most crypto projects. When a small group of people can launch a hard fork of Ethereum or Bitcoin, it is not really decentralized.20 We already have both pluggable governance for versioning of applications and protocols, as well as individual autonomy to fork to versions of your own choosing. Just because TEC launches an update, doesn’t mean you have to update, maybe you  want to convince some people to run TEC Classic!
+
+In actuality,TEC is less centralized. For example,TEC doesn’t even hold a record of all transactions. The transactions can all be found on nodes in the DHT, but they are sharded across many Hosts.
+Hosts set their hosting prices, buyers and sellers on exchanges still set their prices, we have some influence in setting prices for which Reserve Accounts sell hosting. But this is significantly less
+
+influence than can be exerted by the 95% of Bitcoin mined by only a handful of pools, and 95% of coins held by a handful of groups of accounts.
+
+For the purists who are not satisfied by pluggable governance and a fully P2P underlying architecture that is much less centralized than mining class nodes, we say: “Great! Use TEC without TEC. It is completely P2P with zero centralization and no currency neded.” Just don’t expect it to provide DNS services to mainstream users to reach your applications.
+
+Glossary
+
+
+Agents	End-users, participants in theTEC Ecosystem.
+Boxes (or Host
+Boxes)	Devices sold by TEC to enable hosts to “plug and play” the technology and begin earning TEC-credits.
+Ceptr	Redesigning for social organisms.
+Humanity is poised on the edge of a quantum leap in evolution, not at   the level of individuals, but at the level of our collective social organisms like corporations, institutions and governments. In order to make this leap, we need the same kind of architectures of  intelligence that make it possible for trillions of cells to work together in an organism.
+Large-scale collective intelligence requires communication to be virtually instantaneous (electronic), peered, decentralized, semantic and designed to evolve in response to rapidly changing needs.
+Effective collaboration on such a scale would obviate most of the power structures that underpin the social barriers to change and could make formerly intractable problems (such as climate change, species extinction, resource depletion, or poverty) quite readily solvable.
+Ceptr is designed to provide the building blocks of the kind of expressive capacity which embodies nature’s architectures of intelligence and enables an explosion of new patterns of collective intelligence on every scale.
+Commons	Resources belonging to or affecting the whole of a community.
+Computing units	The measures of value for TEC fuel in terms of the hosting services they provide: CPU clock cycles of processing, bandwidth of data transfer, and megabyte months of storage.
+Credit limits	In a mutual credit currency, since the net supply is always zero, the negative balances enabled by credit limits are what enables accounts to have positive balances of credits. In TEC fuel there are two main types of credit limits which are only available for providing the asset-backing of the currency.
+1.Large: Reserve Accounts and Infrastructure Provider have special algorithms for backing credits with outside currencies and capitalizing the infrastructure maintenance and growth.
+2.Small: Hosting providers based on recent past months of hosting earnings.
+Crypto-accounting	To secure transactions of digital assets through the keeping of financial records.
+Decentralized computing	Decentralized computing is the allocation of resources, both hardware and software, to each individual space or office location. In contrast, centralized computing exists when the majority of functions are carried out, or obtained from a remote centralized location.
+DHT	A distributed hash table (DHT) is a class of a decentralized distributed system that provides a lookup service similar to a hash table: (key, value) pairs are stored in a DHT, and any participating node can efficiently retrieve the value associated with a given key.
+Double-entry accounting	A method of managing financial records such that every entry to an account requires a corresponding and opposite entry to a different account.
+DPKI	Decentralized public key infrastructure.
+TEC	1)Organization acting as both infrastructure provider and primary reserve account for the TEC Ecosystem.
+2)The technology created to enable shared hosting on top of TEC, bringing it to mainstream participants.
+3)The crypto-credit used to purchase hosting in the shared TEC Ecosystem
+TEC	Provides the underlying cryptographic fabric with data sharing and validation protocols that enable massive peer-to-peer applications. The agent-centric approach to computation29 removes the need for consensus, eliminating synchronization bottlenecks.
+
+Rather than thinking of TEC like blockchain, it may be better to think of it like git repositories for each agent which can be published, shared, synchronized or merged via a Bit Torrent-like DHT (Distributed Hash Table). The provenance of all shared data is strictly enforced and the structure, content, and its compliance with shared application rules are validated by randomized peers.30
+TEC fuel	The unit of account in TEC using value-stable double-entry accounting. The crypto-credit used to purchase hosting in the shared TEC Ecosystem.
+TEC Hosts (or
+Hosts)	Entities in the TEC ecosystem providing hosting services of P2P applications.
+Nodes	Common term for a peer or machine on a distributed system. Nodes comprise the network, running the code, storing the data, and communicating with each other.
+
+If the network in question is a distributed system, the nodes are clients, servers or peers. A peer may sometimes serve as client, sometimes server. In a peer-to-peer or overlay network, nodes that actively route data for the other networked devices as well as themselves are called supernodes.
+RAD tools	RAD tools (Rapid Application Development)
+Rapid Application
+Framework	More than an SDK which gives devs access, it also includes quick scaffolding tools that generate the framework for your application. There is some validation and application logic you need to put in, but we build all the directory structures and files for you. Most people don't know how to start building a decentralised application, we give you the whole framework.
+Reserve accounts	Reserve Accounts are bound to outside currencies (such as dollars, euro,
+	
+Bitcoin, or Ether) with corresponding credit limits in TEC  for the deposits held in reserve. These enable people to purchase hosting in TEC fuel and enable hosts to redeem the credits they earn for providing that hosting for the outside currencies.
+Validation Process by Peers on DHT	All data published to the shared space (DHT) is validated by checking it is signed to the originating chain, and is produced according to the rules of the application. The validating nodes are neutral parties, selected by the randomization of the hashing process. This ensures all peers continue playing by the shared rules encoded in the application and that the DHT retains data integrity since only valid data can propagate.
